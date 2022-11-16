@@ -1,5 +1,4 @@
 # In[]:
-import os
 import PIL
 import streamlit  as st
 
