@@ -33,7 +33,7 @@ with st.expander("Global Happiness Rank distribution"):
         * ##### Medium rank: Mid / South America, Mid / North Asia, East Europe
         * ##### Lowest rank: Africa, South Asia
         """)
-h = open("C:/DS/Python/Projects/Happiness/figs/Map_Happiness rank.html")
+h = open("figs/Map_Happiness rank.html")
 components.html(h.read(),height=400,width=800)
 
 with st.expander("Global Log GDP per Capita distribution"):
@@ -44,7 +44,7 @@ with st.expander("Global Log GDP per Capita distribution"):
         * ##### Lowest rank: Africa, South Asia
 """)
 
-g = open("C:/DS/Python/Projects/Happiness/figs/Map_Log GDP per capita rank.html")
+g = open("figs/Map_Log GDP per capita rank.html")
 components.html(g.read(),height=400,width=800)
 
 with st.expander("Code Example"):
