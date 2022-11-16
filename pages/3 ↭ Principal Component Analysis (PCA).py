@@ -30,7 +30,7 @@ with st.expander("Observations"):
     ###### Model explains 74.3% of data variability: X axis= 55.9%, Y axis = 18.4%
 """)
 
-image = Image.open('C:/DS/Python/Projects/Happiness/figs/R-PCA.png')
+image = Image.open('figs/R-PCA.png')
 
 st.image(image, caption='Sunrise by the mountains',width=600)
 
