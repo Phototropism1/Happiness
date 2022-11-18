@@ -68,7 +68,7 @@ fig = px.choropleth(gapminder, locations="Country name",
                     color_continuous_scale='RdYlGn_r')
 
 figure(figsize=(10, 16), dpi=80)
-fig.write_html("C:/DS/Python/Projects/Happiness/figs/Map_"+v1+".html")
+fig.write_html("/figs/Map_"+v1+".html")
 fig.show()
        '''
     st.code(code, language='python')
