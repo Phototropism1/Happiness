@@ -57,7 +57,7 @@ df = pd.read_csv('2021.csv')
 df_rank=df[['Happiness rank','Log GDP per capita rank','Social support rank','Healthy life expectancy rank','Freedom to make life choices rank','Generosity rank', 'Perceptions of corruption rank']]
 
 fig = px.imshow(df_rank.T, color_continuous_scale='RdBu_r', origin='lower')
-fig.write_html("C:/DS/Python/Projects/Happiness/figs/Interactive_Heat_Map.html")
+fig.write_html("/figs/Interactive_Heat_Map.html")
 fig.show()
     '''
     st.code(code, language='python')
