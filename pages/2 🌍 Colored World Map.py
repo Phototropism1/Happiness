@@ -11,7 +11,7 @@ st.markdown("")
 
 st.write("""
 #### Key Findings
-##### There is a correlation between Global distribution of Happiness and Log GDP per capita ranks !
+##### There is a correlation between Global distribution of Happiness Score and Log GDP per capita !
 ##### This distribution correlation can give us a hint regards the connection between Happiness and Money.""")
 
 with st.expander("Model Benefits"):
@@ -21,40 +21,40 @@ with st.expander("Model Benefits"):
         """)
 with st.expander("Model Features"):
     st.write(""" 
-    * ##### Color scale: Green = High rank, Red = Low rank
+    * ##### Color scale: Green = High Score, Red = Low Score
     * ##### Key country info: Hover on country 
     * ##### Zoom: Scroll mouse
     * ##### Pan: Left click and drag
 """)
 
-with st.expander("Global Happiness Rank distribution"):
+with st.expander("Global Happiness Score distribution"):
     st.write("""
-        * ##### Highest rank: West Europe, North America, Australia
-        * ##### Medium rank: Mid / South America, Mid / North Asia, East Europe
-        * ##### Lowest rank: Africa, South Asia
+        * ##### Highest Score: West Europe, North America, Australia
+        * ##### Medium Score: Mid / South America, Mid / North Asia, East Europe
+        * ##### Lowest Score: Africa, South Asia
         """)
-h = open("figs/Map_Happiness rank.html")
+h = open("figs/Map_Happiness Score.html")
 components.html(h.read(),height=400,width=800)
 
 with st.expander("Global Log GDP per Capita distribution"):
     st.write("""
-        * ##### Correlated global distribution when comparing to Happiness Rank
-        * ##### Highest rank: West Europe, North America, Australia
-        * ##### Medium rank: Mid / South America, Mid / North Asia, East Europe
-        * ##### Lowest rank: Africa, South Asia
+        * ##### Correlated global distribution when comparing to Happiness Score
+        * ##### Highest Score: West Europe, North America, Australia
+        * ##### Medium Score: Mid / South America, Mid / North Asia, East Europe
+        * ##### Lowest Score: Africa, South Asia
 """)
 
-g = open("figs/Map_Log GDP per capita rank.html")
+g = open("figs/Map_Log GDP per capita.html")
 components.html(g.read(),height=400,width=800)
 
 with st.expander("Code Example"):
     code = '''# In[]:
 
-### World map 1 - Country by Happiness rank
+### World map 1 - Country by Happiness Score
 
-v1='Happiness rank'
+v1='Happiness Score'
 h1='Regional indicator'
-h2='Log GDP per capita rank'
+h2='Log GDP per capita'
 
 np.random.seed(12)
 gapminder = country
